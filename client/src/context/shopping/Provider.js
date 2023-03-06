@@ -5,6 +5,7 @@ const initialState = {
   allProducts: [],
   products: [],
   productsInCart: {},
+  filter: ''
 }
 
 const ShoppingContext = createContext();
