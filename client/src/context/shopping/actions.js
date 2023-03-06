@@ -1,6 +1,8 @@
 import axios from "axios";
 
 export const GET_PRODUCTS = "GET_PRODUCTS";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const DELETE_TO_CART = "DELETE_TO_CART";
 
 export const asyncGetProducts = async () => {
   try {
@@ -16,3 +18,6 @@ export const asyncGetProducts = async () => {
     return { type: GET_PRODUCTS, payload: [] };
   }
 };
+
+export const addToCart = (id, quantity) => ({type: ADD_TO_CART, payload: {id, quantity}})
+export const deleteToCart = (id) => ({type: DELETE_TO_CART, payload: id})

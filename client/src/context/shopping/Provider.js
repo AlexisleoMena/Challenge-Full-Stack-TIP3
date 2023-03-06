@@ -4,6 +4,7 @@ import reducer from "./reducer";
 const initialState = {
   allProducts: [],
   products: [],
+  productsInCart: {},
 }
 
 const ShoppingContext = createContext();
