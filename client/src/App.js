@@ -1,4 +1,5 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header/Header";
 import ShoppingProvider from "./context/shopping/Provider";
 import Cart from "./pages/Cart";
 import Detail from "./pages/Detail";
@@ -8,6 +9,7 @@ function App() {
   return (
     <ShoppingProvider>
       <Router>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/detail/:id" element={<Detail />} />
