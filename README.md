@@ -6,7 +6,7 @@ La idea general consistió en crear una aplicación en la cual se puedan ver dif
 
 ## Frontend
 
-En el desarrollo frontend de la aplicación, se emplearon React con Hooks y LocalStorage.
+En el desarrollo frontend de la aplicación, se emplearon React con Hooks, Tailwind y SessionStorage.
 
 ## Capturas de Pantalla
 
